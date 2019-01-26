@@ -1,0 +1,2 @@
+﻿CREATE proc [dbo].[spInsertHistoriaZamowienU] @IdStatus int, @IdPracownik int, @IdZamowienie int, @DataZmiany date as
+insert into HistoriaZamowienU values (@IdStatus, @IdPracownik, @IdZamowienie, @DataZmiany)
