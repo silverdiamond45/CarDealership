@@ -57,5 +57,59 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="rapOp\" />
+    <Folder Include="rapOp\Views\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\Zespoly_9.sql" />
+    <Build Include="dbo\Tables\ZamowieniaUslug_9.sql" />
+    <Build Include="dbo\Tables\Zamowienia_10.sql" />
+    <Build Include="dbo\Tables\Wyplaty_9.sql" />
+    <Build Include="dbo\Tables\Wynagrodzenia_9.sql" />
+    <Build Include="dbo\Tables\Uslugi_9.sql" />
+    <Build Include="dbo\Tables\StatusZamowienia_9.sql" />
+    <Build Include="dbo\Tables\Stanowiska_9.sql" />
+    <Build Include="dbo\Tables\Pracownicy_10.sql" />
+    <Build Include="dbo\Tables\Modele_10.sql" />
+    <Build Include="dbo\Tables\Marki_10.sql" />
+    <Build Include="dbo\Tables\Klienci_10.sql" />
+    <Build Include="dbo\Tables\HistoriaZamowienU_9.sql" />
+    <Build Include="dbo\Tables\Cennik_10.sql" />
+    <Build Include="dbo\Views\vwTabZamowieniaUslug.sql" />
+    <Build Include="dbo\Views\vwTabZamowienia.sql" />
+    <Build Include="dbo\Views\vwTabUslugi.sql" />
+    <Build Include="dbo\Views\vwTabKlienci.sql" />
+    <Build Include="dbo\Views\vwTabAuta.sql" />
+    <Build Include="rapOp\Views\vwSerwisNajczestszaUsluga_7.sql" />
+    <Build Include="rapOp\Views\vwSerwisKtoOdebral_7.sql" />
+    <Build Include="rapOp\Views\vwZamowieniaPracownikow2_7.sql" />
+    <Build Include="rapOp\Views\vwZamowieniaPracownikow_7.sql" />
+    <Build Include="rapOp\Views\vwNiezamowioneModele_7.sql" />
+    <Build Include="rapOp\Views\vwRabat_7.sql" />
+    <Build Include="rapOp\Views\vwMarkiZamowienia_7.sql" />
+    <Build Include="rapOp\Views\vwHRMaxPremiaWZespole_5.sql" />
+    <Build Include="rapOp\Views\vwHRAvgWynagrodzenieZespolu_6.sql" />
+    <Build Include="rapOp\Views\vwSumaPremii_6.sql" />
+    <Build Include="rapOp\Views\vwZamowieniaZrealizowaneMaxTydzien_6.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertZespoly_4.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertZamowieniaUslug_2.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertZamowienia_2.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertWyplaty_4.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertWynagrodzenia_4.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertUslugi_4.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertStatusZamowienia_4.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertStanowiska_4.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertPracownicy_4.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertModele_4.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertMarki_4.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertKlienci_4.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertHistoriaZamowienU_2.sql" />
+    <Build Include="dbo\Stored Procedures\spInsertCennik_4.sql" />
+    <Build Include="Security\rapOp_7.sql" />
   </ItemGroup>
 </Project>
