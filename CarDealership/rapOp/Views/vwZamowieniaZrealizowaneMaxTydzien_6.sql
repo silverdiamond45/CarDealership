@@ -11,7 +11,7 @@ with cte as
 													HAVING         IdStatus = 2
 													)
 SELECT        CONVERT(INT, CONVERT(DATETIME, tabZamkniete.DataZamknieciaZamowienia)) - 
-			  CONVERT(INT, CONVERT(DATETIME, tabZlozone.DataZlozeniaZamowienia)) AS CzasRealizacji, tabZamkniete.IdZamowienie
+			  CONVERT(INT, CONVERT(DATETIME, tabZlozone.DataZlozeniaZamowienia)) AS DniRealizacji, tabZamkniete.IdZamowienie
 FROM            (SELECT        DataZmiany AS DataZlozeniaZamowienia, IdZamowienie
                           FROM            cte
                           WHERE        (IdStatus = 2)) AS tabZlozone INNER JOIN
